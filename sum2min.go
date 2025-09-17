@@ -12,11 +12,11 @@ func sumTwoSmallestNumbers(numbers []int) int {
     }
     
     for i := 2; i < len(numbers); i++ {
-        num := numbers[i]
+        num := numbers[i]//тукущий элемент по индекс 
         
-        if num < min1 {
+        if num < min1 {//Проверяем, меньше ли текущее число самого маленького найденного числа
             min2 = min1
-            min1 = num
+            min1 =  //Устанавливаем новое минимальное значение
         } else if num < min2 {
             min2 = num
         }
